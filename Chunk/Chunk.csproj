@@ -35,6 +35,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buffer\SBufferStream.cs" />
+    <Compile Include="Buffer\SBuffer.cs" />
     <Compile Include="Chunk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Section.cs" />
