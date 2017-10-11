@@ -6,7 +6,7 @@ using System;
 namespace Chunk
 {
     /// <summary>Chunk를 관리하는 클래스입니다.</summary>
-    public class Chunk : IList<Section> {
+    public class Chunk : IList<Section>, IDisposable {
         private List<Section> Sections;
 
         /// <summary>빈 Chunk를 생성합니다.</summary>
@@ -20,6 +20,13 @@ namespace Chunk
             Sections = new List<Section>();
             while(Stream.Position + 8 < Stream.Length)
                 Sections.Add(new Section(Stream));
+        }
+
+        /// <summary>Chunk의 모든 데이터를 해제합니다.</summary>
+        public void Dispose() {
+            foreach(var s in Sections)
+                s.Dispose();
+            Sections.Clear();
         }
 
         /// <summary>스트림에 Chunk를 작성합니다.</summary>

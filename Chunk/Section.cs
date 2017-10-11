@@ -7,7 +7,7 @@ using System;
 namespace Chunk
 {
     /// <summary>Chunk의 구휙을 관리하는 클래스입니다.</summary>
-    public class Section {
+    public class Section : IDisposable {
         private const int BufferSize = 4096;
         private SBuffer SData;
         private byte[] SName;
@@ -55,5 +55,9 @@ namespace Chunk
         /// <returns>구휙의 읽기 및 작성 스트림입니다.</returns>
         public Stream GetStream()
             => new SBufferStream(SData);
+
+        /// <summary>구휙의 데이터를 모두 해제합니다.</summary>
+        public void Dispose()
+            => SData.Dispose();
     }
 }
