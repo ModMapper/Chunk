@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chunk", "Chunk\Chunk.csproj", "{707F6A98-713D-4688-9B61-433C0CA92DA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chunk", "Chunk\Chunk.csproj", "{65F9E393-CF4A-40B9-B55D-1EEC5DA0C1C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{707F6A98-713D-4688-9B61-433C0CA92DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{707F6A98-713D-4688-9B61-433C0CA92DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{707F6A98-713D-4688-9B61-433C0CA92DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{707F6A98-713D-4688-9B61-433C0CA92DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F9E393-CF4A-40B9-B55D-1EEC5DA0C1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F9E393-CF4A-40B9-B55D-1EEC5DA0C1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F9E393-CF4A-40B9-B55D-1EEC5DA0C1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F9E393-CF4A-40B9-B55D-1EEC5DA0C1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C570A8A1-C996-4F67-867D-58CA1FCCE170}
 	EndGlobalSection
 EndGlobal
